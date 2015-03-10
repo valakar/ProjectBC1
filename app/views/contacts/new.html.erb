@@ -1,0 +1,104 @@
+<div id="homepage_header">
+
+  <div class="homepage_background otherpage_background "></div>
+  <a href=<%= root_path %>><div id="logo"></div></a>
+  <div class="container otherpage_background_fix ">
+
+      
+  <!-- Logo -->
+    <!--<div id="logoText">-->
+      <!--<h1><a href=<%= root_path %>>BC Studio</a></h1>-->
+    <!--</div>-->
+  
+  <!-- Nav -->
+    <!--<nav id="nav">-->
+      <!--<ul>-->
+        <!--&lt;!&ndash; <li class="active"><a href="index.html">Homepage</a></li> &ndash;&gt;-->
+        <!--<li><%#= link_to "Graphic Design", home_design_path%></li>-->
+        <!--<li><%#= link_to "MKT Creatives", home_creatives_path%></li>-->
+        <!--<li><%#= link_to "Website", home_website_path%></li>-->
+        <!--<li><%#= link_to "Consultant", home_consultant_path%></li>-->
+        <!--<li class="active"><%= link_to "Contact", contacts_path%></li>-->
+      <!--</ul>-->
+    <!--</nav>-->
+  </div>
+</div>
+<nav id="navGorizontal">
+  <ul>
+    <!-- <li class="active"><a href="index.html">Homepage</a></li> -->
+    <li><%= link_to "Graphic Design", home_design_path%></li>
+    <li><%= link_to "MKT Creatives", home_creatives_path%></li>
+    <li><%= link_to "Website", home_website_path%></li>
+    <li><%= link_to "Consultant", home_consultant_path%></li>
+    <li class="active"><%= link_to "Contact", contacts_path%></li>
+  </ul>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-5 col-md-5 col-md-offset-1 padding-tb-100" id="contacts-text">
+      <legend>CONTACT US</legend>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type
+        specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged.
+      </p><br/>
+      <p>
+        BC Studio<br/>
+        Lorem Ipsum<br/>
+        Ipsum Lorem<br/>
+        111a First Str<br/>
+        Country<br/>
+        City<br/>
+      </p><br/>
+      <p>
+        Tel: +88 (8) 888 888 8888<br/>
+        <a href="mailto:info@bcstudio.biz">info@bcstudio.biz</a>
+      </p>
+    </div>
+    <div class="col-sm-5 col-md-5" id="contacts">
+      <!-- <form class="form" method="post" action="" name="contact" id="contacts"> -->
+      <%= simple_form_for @contact, :html => {:class => 'form-horizontal', novalidate: false } do |f| %>
+        <fieldset>
+          <legend> ENQUIRY FORM </legend>
+          <div class="form-group"> 
+            <div class="input-group">
+              <span class="input-group-addon" id="sizing-addon3"><i class="fa fa-user"></i></span> 
+              <input class="string form-control" id="contact_name" name="contact[name]" placeholder="Name *" type="text" required>
+              <span class="form-control-feedback glyphicon"></span>
+            </div>              
+          </div>   
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id="sizing-addon3"><i class="fa fa-envelope-o"></i></span>
+              <input class="string email form-control" id="contact_email" name="contact[email]" type="email" placeholder="Email *" required>
+              <span class="help-block"></span>
+              <span class="form-control-feedback glyphicon"></span>
+            </div>   
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id="sizing-addon3"><i class="fa fa-book"></i></span>
+              <input class="string form-control" id="contact_subject" name="contact[subject]" placeholder="Subject" type="text" required>
+              <span class="form-control-feedback glyphicon"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id="sizing-addon3"><i class="fa fa-pencil"></i></span>
+              <textarea class="text form-control" id="contact_message" name="contact[message]"rows="10" cols="40" placeholder="Input your message *" required></textarea>
+              <span class="form-control-feedback glyphicon"></span>
+            </div>
+          </div>
+          <div class= "hidden">
+            <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+          </div>
+          <div class="form-group"> 
+            <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+            <button type="reset" id="cancel" class="btn btn-danger">Cancel</button> 
+          </div>
+        </fieldset>
+      <% end %>
+    </div> 
+  </div> 
+</div>   

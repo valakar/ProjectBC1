@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="716555059">
+    <data-source source="LOCAL" name="Rails bcstudio: development" uuid="c213f0c4-f8f1-4303-911d-743b78b1d8f4">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:bcstudio_development</jdbc-url>
+      <user-name>bcstudio_admin</user-name>
+      <user-password>dfc8dfc9dfd9dfdedfdfdfcedfc3dfc5dfeedfdfdf99df9cdfc8</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails bcstudio: test" uuid="f8a1e0c3-bd8e-40f0-8cfd-9db2ce8f0ea1">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:bcstudio_test</jdbc-url>
+      <user-name>bcstudio_admin</user-name>
+      <user-password>dfc8dfc9dfd9dfdedfdfdfcedfc3dfc5dfeedfdfdf99df9cdfc8</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails bcstudio: production" uuid="96d85441-7e5e-4d5d-8af2-596f1f138129">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:gmmobiz_bcstudiodb</jdbc-url>
+      <user-name>gmmobiz_bcstudio</user-name>
+      <user-password>dfc8dfc9dfd9dfdedfdfdfcedfc3dfc5dfeedfdfdf99df9cdfc8</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

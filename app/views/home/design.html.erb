@@ -1,0 +1,73 @@
+
+<div id="homepage_header">
+
+  <div class="homepage_background otherpage_background "></div>
+  <a href=<%= root_path %>><div id="logo"></div></a>
+  <div class="container otherpage_background_fix ">
+
+      
+  <!-- Logo -->
+    <!--<div id="logoText">-->
+      <!--<h1><a href=<%= root_path %>>BC Studio</a></h1>-->
+    <!--</div>-->
+  
+  <!-- Nav -->
+    <!--<nav id="nav">-->
+      <!--<ul>-->
+        <!--&lt;!&ndash; <li class="active"><a href="index.html">Homepage</a></li> &ndash;&gt;-->
+        <!--<li class="active"><%#= link_to "Graphic Design", home_design_path%></li>-->
+        <!--<li><%#= link_to "MKT Creatives", home_creatives_path%></li>-->
+        <!--<li><%#= link_to "Website", home_website_path%></li>-->
+        <!--<li><%#= link_to "Consultant", home_consultant_path%></li>-->
+        <!--<li><%#= link_to "Contact", contacts_path%></li>-->
+      <!--</ul>-->
+    <!--</nav>-->
+  </div>
+</div>
+<nav id="navGorizontal">
+  <ul>
+    <!-- <li class="active"><a href="index.html">Homepage</a></li> -->
+    <li class="active"><%= link_to "Graphic Design", home_design_path%></li>
+    <li><%= link_to "MKT Creatives", home_creatives_path%></li>
+    <li><%= link_to "Website", home_website_path%></li>
+    <li><%= link_to "Consultant", home_consultant_path%></li>
+    <li><%= link_to "Contact", contacts_path%></li>
+  </ul>
+</nav>
+<div class="container-fluid intro" id="about">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1 class="chain">PRINTING DESIGNS</h1>
+      <p class="text-intro">Our talented creative designers are going to fill a blank piece of paper with new and exciting ideas</p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" id="shop">
+  <div class="row">
+    <div id="effect" class="effects clearfix">
+      <%= render :partial => 'home/products_banner' %>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid padding-top" id="shop">
+  <div class="row">
+    <div id="effect" class="effects clearfix">
+      <%= render :partial => 'home/products_banner' %>
+    </div>
+  </div>
+</div>
+
+<div id="design">
+  <%= render :partial => 'home/design_part' %>
+</div>
+
+<div tabindex="-1" class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-body">
+    
+  </div>
+   </div>
+  </div>
+</div>
